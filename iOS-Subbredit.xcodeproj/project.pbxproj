@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		07DE4CB52106463F00730457 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE4CB42106463F00730457 /* AppDelegate.swift */; };
-		07DE4CB72106463F00730457 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE4CB62106463F00730457 /* ViewController.swift */; };
+		07DE4CB72106463F00730457 /* DisplayPostsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE4CB62106463F00730457 /* DisplayPostsVC.swift */; };
 		07DE4CBA2106463F00730457 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DE4CB82106463F00730457 /* Main.storyboard */; };
 		07DE4CBC2106464100730457 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07DE4CBB2106464100730457 /* Assets.xcassets */; };
 		07DE4CBF2106464100730457 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DE4CBD2106464100730457 /* LaunchScreen.storyboard */; };
@@ -18,13 +18,16 @@
 		07DE4CD22106650800730457 /* DisplayPostsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE4CD12106650800730457 /* DisplayPostsVM.swift */; };
 		07DE4CD42106672700730457 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE4CD32106672700730457 /* Bindable.swift */; };
 		07DE4CD821066C3A00730457 /* PostCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE4CD721066C3A00730457 /* PostCellVM.swift */; };
+		07DE4CDA2106754300730457 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE4CD92106754300730457 /* PostCell.swift */; };
+		07DE4CDC21067BFD00730457 /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07DE4CDB21067BFD00730457 /* PostCell.xib */; };
+		07DE4CDF21068C1A00730457 /* Extension-Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE4CDE21068C1A00730457 /* Extension-Date.swift */; };
 		0B1B0FC5ABCE6CBBBE3B205E /* Pods_iOS_Subbredit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E48DE2EE89DA045C8D0C15E /* Pods_iOS_Subbredit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		07DE4CB12106463F00730457 /* iOS-Subbredit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Subbredit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07DE4CB42106463F00730457 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07DE4CB62106463F00730457 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		07DE4CB62106463F00730457 /* DisplayPostsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayPostsVC.swift; sourceTree = "<group>"; };
 		07DE4CB92106463F00730457 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07DE4CBB2106464100730457 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07DE4CBE2106464100730457 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +38,9 @@
 		07DE4CD12106650800730457 /* DisplayPostsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DisplayPostsVM.swift; path = "iOS-Subbredit/View Model/DisplayPostsVM.swift"; sourceTree = SOURCE_ROOT; };
 		07DE4CD32106672700730457 /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
 		07DE4CD721066C3A00730457 /* PostCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCellVM.swift; sourceTree = "<group>"; };
+		07DE4CD92106754300730457 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		07DE4CDB21067BFD00730457 /* PostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
+		07DE4CDE21068C1A00730457 /* Extension-Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension-Date.swift"; sourceTree = "<group>"; };
 		0F6DA2625C822BD271A9593B /* Pods-iOS-Subbredit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Subbredit.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Subbredit/Pods-iOS-Subbredit.release.xcconfig"; sourceTree = "<group>"; };
 		646122C6ABF95C9755F45179 /* Pods-iOS-Subbredit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Subbredit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Subbredit/Pods-iOS-Subbredit.debug.xcconfig"; sourceTree = "<group>"; };
 		7E48DE2EE89DA045C8D0C15E /* Pods_iOS_Subbredit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Subbredit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,7 +85,6 @@
 				07DE4CCE2106624F00730457 /* Helpers */,
 				07DE4CC62106472F00730457 /* Git */,
 				07DE4CB42106463F00730457 /* AppDelegate.swift */,
-				07DE4CB62106463F00730457 /* ViewController.swift */,
 				07DE4CB82106463F00730457 /* Main.storyboard */,
 				07DE4CBB2106464100730457 /* Assets.xcassets */,
 				07DE4CBD2106464100730457 /* LaunchScreen.storyboard */,
@@ -107,6 +112,7 @@
 		07DE4CCE2106624F00730457 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				07DE4CDD21068BE600730457 /* Extensions */,
 				07DE4CCC21064CEF00730457 /* AppServerClient.swift */,
 				07DE4CD32106672700730457 /* Bindable.swift */,
 			);
@@ -134,6 +140,8 @@
 		07DE4CD521066A3900730457 /* Custom Cell */ = {
 			isa = PBXGroup;
 			children = (
+				07DE4CD92106754300730457 /* PostCell.swift */,
+				07DE4CDB21067BFD00730457 /* PostCell.xib */,
 			);
 			path = "Custom Cell";
 			sourceTree = "<group>";
@@ -141,8 +149,17 @@
 		07DE4CD621066A4800730457 /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				07DE4CB62106463F00730457 /* DisplayPostsVC.swift */,
 			);
 			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		07DE4CDD21068BE600730457 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				07DE4CDE21068C1A00730457 /* Extension-Date.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		57D55FBF27AE9397299AFDFD /* Frameworks */ = {
@@ -224,6 +241,7 @@
 			files = (
 				07DE4CC82106476100730457 /* .gitignore in Resources */,
 				07DE4CBF2106464100730457 /* LaunchScreen.storyboard in Resources */,
+				07DE4CDC21067BFD00730457 /* PostCell.xib in Resources */,
 				07DE4CBC2106464100730457 /* Assets.xcassets in Resources */,
 				07DE4CBA2106463F00730457 /* Main.storyboard in Resources */,
 			);
@@ -278,12 +296,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				07DE4CCB21064A9300730457 /* Post.swift in Sources */,
-				07DE4CB72106463F00730457 /* ViewController.swift in Sources */,
+				07DE4CB72106463F00730457 /* DisplayPostsVC.swift in Sources */,
 				07DE4CD821066C3A00730457 /* PostCellVM.swift in Sources */,
+				07DE4CDF21068C1A00730457 /* Extension-Date.swift in Sources */,
 				07DE4CD42106672700730457 /* Bindable.swift in Sources */,
 				07DE4CB52106463F00730457 /* AppDelegate.swift in Sources */,
 				07DE4CCD21064CEF00730457 /* AppServerClient.swift in Sources */,
 				07DE4CD22106650800730457 /* DisplayPostsVM.swift in Sources */,
+				07DE4CDA2106754300730457 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,6 +12,7 @@
 		07DE4CBA2106463F00730457 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DE4CB82106463F00730457 /* Main.storyboard */; };
 		07DE4CBC2106464100730457 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07DE4CBB2106464100730457 /* Assets.xcassets */; };
 		07DE4CBF2106464100730457 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DE4CBD2106464100730457 /* LaunchScreen.storyboard */; };
+		07DE4CC82106476100730457 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 07DE4CC72106476100730457 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		07DE4CBB2106464100730457 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07DE4CBE2106464100730457 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07DE4CC02106464100730457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07DE4CC72106476100730457 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		07DE4CB32106463F00730457 /* iOS-Subbredit */ = {
 			isa = PBXGroup;
 			children = (
+				07DE4CC62106472F00730457 /* Git */,
 				07DE4CB42106463F00730457 /* AppDelegate.swift */,
 				07DE4CB62106463F00730457 /* ViewController.swift */,
 				07DE4CB82106463F00730457 /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				07DE4CC02106464100730457 /* Info.plist */,
 			);
 			path = "iOS-Subbredit";
+			sourceTree = "<group>";
+		};
+		07DE4CC62106472F00730457 /* Git */ = {
+			isa = PBXGroup;
+			children = (
+				07DE4CC72106476100730457 /* .gitignore */,
+			);
+			path = Git;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +133,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07DE4CC82106476100730457 /* .gitignore in Resources */,
 				07DE4CBF2106464100730457 /* LaunchScreen.storyboard in Resources */,
 				07DE4CBC2106464100730457 /* Assets.xcassets in Resources */,
 				07DE4CBA2106463F00730457 /* Main.storyboard in Resources */,

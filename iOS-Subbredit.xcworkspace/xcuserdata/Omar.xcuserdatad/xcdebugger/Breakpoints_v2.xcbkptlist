@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOS-Subbredit/View/Custom Cell/PostCell.swift"
+            timestampString = "554112291.817717"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "PostCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOS_Subbredit.PostCell.created.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "iOS-Subbredit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/omaramoako/Documents/Xcode%20Projects%20/Other%20Projects/iOS-Subbredit/iOS-Subbredit/View/Custom%20Cell/PostCell.swift"
+                  timestampString = "554080555.214659"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "79">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOS_Subbredit.PostCell.created.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "iOS-Subbredit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/omaramoako/Documents/Xcode%20Projects%20/Other%20Projects/iOS-Subbredit/iOS-Subbredit/View/Custom%20Cell/PostCell.swift"
+                  timestampString = "554080555.216193"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "90">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOS_Subbredit.PostCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; iOS_Subbredit.PostCell"
+                  moduleName = "iOS-Subbredit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/omaramoako/Documents/Xcode%20Projects%20/Other%20Projects/iOS-Subbredit/iOS-Subbredit/View/Custom%20Cell/PostCell.swift"
+                  timestampString = "554080555.217669"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOS_Subbredit.PostCell.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;iOS_Subbredit.PostCell&gt;"
+                  moduleName = "iOS-Subbredit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/omaramoako/Documents/Xcode%20Projects%20/Other%20Projects/iOS-Subbredit/iOS-Subbredit/View/Custom%20Cell/PostCell.swift"
+                  timestampString = "554080555.219318"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "55">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

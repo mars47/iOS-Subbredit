@@ -15,11 +15,10 @@ class DisplayPostsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        tableView.register(UINib(nibName: "PostCell", bundle: nil), forCellReuseIdentifier: "tCell")
-        
+    
         tableView.delegate = self
         tableView.dataSource = self
+        self.tableView.rowHeight = 88
         bindViewModel()
         viewModel.downloadReddits()
     }
@@ -32,8 +31,17 @@ class DisplayPostsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let destination = segue.destination as? DetailVC {
+            if let viewModel = sender as? PostCellVM {
+                destination.viewModel = viewModel
+            }
+        }
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.postArray.value.count
+        return viewModel.tempArray.value.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -45,6 +53,39 @@ class DisplayPostsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
             return cell
         }
         return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if indexPath.row == viewModel.tempArray.value.count - 1 {
+            if viewModel.tempArray.value.count < viewModel.postArray.value.count {
+                var limit : Int?
+                var index = viewModel.tempArray.value.count
+                if 10 > viewModel.postArray.value.count - viewModel.tempArray.value.count {
+                    limit = index + (viewModel.postArray.value.count - viewModel.tempArray.value.count)
+                }
+                else {
+                    limit = index + 10
+                }
+
+                if let limit = limit {
+
+                    while index < limit {
+                        viewModel.tempArray.value.append(viewModel.postArray.value[index])
+                        index = index + 1
+                    }
+                    self.perform(#selector(loadTable), with: nil, afterDelay: 3.5)
+                }
+            }
+        }
+    }
+
+    @objc func loadTable() {
+        self.tableView.reloadData()
+    }
+    
+    func  tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let viewModel = self.viewModel.postCellVMArray[indexPath.row]
+        performSegue(withIdentifier: "Show", sender: viewModel)
     }
 
 

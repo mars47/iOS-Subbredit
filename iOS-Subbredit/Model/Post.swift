@@ -11,22 +11,25 @@ import SwiftyJSON
 
 struct Post {
     
+    let date = Date()
     private (set) var title: String
     private (set) var author: String
     private (set) var url: String
     private (set) var created: Int
+    private (set) var timeAgo: String
     private (set) var selftext: String
     private (set) var ups: Int
     private (set) var downs: Int
     
     
     init(initialisePostWith json:JSON) {
-        self.title = json["title"].string!
-        self.author = json["author"].string!
-        self.url = json["url"].string!
-        self.created = json["created"].int!
-        self.selftext = json["selftext"].string!
-        self.ups = json["ups"].int!
-        self.downs = json["downs"].int!
+        title = json["title"].string!
+        author = json["author"].string!
+        url = json["url"].string!
+        created = json["created"].int!
+        timeAgo = date.timeAgoSinceDate(date.getDate(timestamp: Double(created)))
+        selftext = json["selftext"].string!
+        ups = json["ups"].int!
+        downs = json["downs"].int!
     }
 }

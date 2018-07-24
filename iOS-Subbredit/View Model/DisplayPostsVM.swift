@@ -14,6 +14,10 @@ class DisplayPostsVM: NSObject {
     var postCellVMArray: [PostCellVM]!
     let appServerClient : AppServerClient
     
+    var tempArray = Bindable([Post]())
+    var limit = 10
+    var totalEnteries : Int?
+    
     init(appServerClient: AppServerClient = AppServerClient()) {
         self.appServerClient = appServerClient
     }
@@ -22,8 +26,14 @@ class DisplayPostsVM: NSObject {
         
         self.appServerClient.downloadReddits() { (result) in
             self.postArray.value = result
-
             self.postCellVMArray = self.postArray.value.compactMap{ PostCellVM(initWith: $0) }
+            
+            var index = 0
+            while index < self.limit {
+                self.tempArray.value.append(result[index])
+                index = index + 1
+            }
+            
         }
         
     }

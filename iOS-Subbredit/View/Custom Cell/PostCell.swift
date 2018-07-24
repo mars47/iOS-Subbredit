@@ -10,20 +10,10 @@ import UIKit
 
 class PostCell: UITableViewCell {
     
-    @IBOutlet weak var created: UILabel!
+    @IBOutlet weak var timeAgo: UILabel!
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var selftext: UILabel!
-    @IBOutlet weak var widthConstraint: NSLayoutConstraint!
-    
-//    override func awakeFromNib() {
-//        super.awakeFromNib()
-//        // Initialization code
-//        self.contentView.translatesAutoresizingMaskIntoConstraints = false
-//        let screenWidth = UIScreen.main.bounds.size.width
-//        widthConstraint.constant = screenWidth
-//    }
-    
-    
+
     var viewModel: PostCellVM! {
         didSet {
             updateUI()
@@ -34,10 +24,9 @@ class PostCell: UITableViewCell {
         
         DispatchQueue.main.async {
             
-            self.created.text = "\(self.viewModel.post.created)"
-            self.title.text = self.viewModel.post.title
-            self.selftext.text = self.viewModel.post.selftext
-            
+           self.timeAgo.text = "Posted by \(self.viewModel.post.author) \(self.viewModel.post.timeAgo)"
+           self.title.text = self.viewModel.post.title
+           self.selftext.text = self.viewModel.post.selftext
         }
     }
     

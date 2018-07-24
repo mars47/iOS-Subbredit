@@ -67,9 +67,6 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="created" destination="stb-p5-oBE" id="BFJ-xT-yVE"/>
-                <outlet property="selftext" destination="FH5-55-JKT" id="02e-En-X1W"/>
-                <outlet property="title" destination="fuO-xA-p5o" id="lnR-HV-2le"/>
                 <outlet property="widthConstraint" destination="SEA-g0-ZO3" id="iTI-3t-lKF"/>
             </connections>
             <point key="canvasLocation" x="43.5" y="23.5"/>

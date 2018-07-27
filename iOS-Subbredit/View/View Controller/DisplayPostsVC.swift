@@ -56,25 +56,29 @@ class DisplayPostsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        if indexPath.row == viewModel.tempArray.value.count - 1 {
-            if viewModel.tempArray.value.count < viewModel.postArray.value.count {
-                var limit : Int?
-                var index = viewModel.tempArray.value.count
-                if 10 > viewModel.postArray.value.count - viewModel.tempArray.value.count {
-                    limit = index + (viewModel.postArray.value.count - viewModel.tempArray.value.count)
+        
+        var limit : Int? // how much new items will be displayed
+        let displayedPosts = viewModel.tempArray.value.count
+        let allPosts = viewModel.postArray.value.count
+        
+        if (indexPath.row == displayedPosts - 1) && (displayedPosts < allPosts) {
+            // if loading the last post AND if there are more posts to display
+            
+            var index = displayedPosts // record current number of displayed posts
+            
+            if 10 > allPosts - displayedPosts { // if less than 10 posts left to display
+                limit = index + (allPosts - displayedPosts) // record how many
+            } else {
+                limit = index + 10 // else set display limit to 10 posts
+            }
+            
+            if let limit = limit {
+                
+                while index < limit { // append 10 more items to array
+                    viewModel.tempArray.value.append(viewModel.postArray.value[index])
+                    index = index + 1
                 }
-                else {
-                    limit = index + 10
-                }
-
-                if let limit = limit {
-
-                    while index < limit {
-                        viewModel.tempArray.value.append(viewModel.postArray.value[index])
-                        index = index + 1
-                    }
-                    self.perform(#selector(loadTable), with: nil, afterDelay: 3.5)
-                }
+                self.perform(#selector(loadTable), with: nil, afterDelay: 5)
             }
         }
     }

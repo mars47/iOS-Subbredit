@@ -29,7 +29,7 @@ class DisplayPostsVM: NSObject {
             self.postCellVMArray = self.postArray.value.compactMap{ PostCellVM(initWith: $0) }
             
             var index = 0
-            while index < self.limit {
+            while index < self.limit { //append 10 results from 'result' to tempArray
                 self.tempArray.value.append(result[index])
                 index = index + 1
             }
